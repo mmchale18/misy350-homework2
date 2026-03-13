@@ -75,7 +75,7 @@ with tab2:
 
         total_stock = sum(item["stock"] for item in inventory)
 
-        t.metric("Total Items in Stock", total_stock)
+        st.metric("Total Items in Stock", total_stock)
 
     for item in filtered_inventory:
         if item["stock"] < 10:
